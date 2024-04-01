@@ -14,3 +14,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 ## Challenges
 
 * Day 1: https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/description/
+
+* Day 2: https://leetcode.com/problems/take-gifts-from-the-richest-pile/description/
