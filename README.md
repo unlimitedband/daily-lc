@@ -20,3 +20,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 3: https://leetcode.com/problems/k-divisible-elements-subarrays/description/
 
 * Day 4: https://leetcode.com/problems/my-calendar-iii/description/
+
+* Day 5: https://leetcode.com/problems/numbers-with-same-consecutive-differences/description/
