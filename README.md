@@ -26,3 +26,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 6: https://leetcode.com/problems/percentage-of-letter-in-string/description/
 
 * Day 7: https://leetcode.com/problems/find-right-interval/description/
+
+* Day 8: https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/description/
