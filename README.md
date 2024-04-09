@@ -30,3 +30,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 8: https://leetcode.com/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/description/
 
 * Day 9: https://leetcode.com/problems/maximum-points-in-an-archery-competition/description/
+
+* Day 10: https://leetcode.com/problems/best-position-for-a-service-centre/description/
