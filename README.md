@@ -32,3 +32,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 9: https://leetcode.com/problems/maximum-points-in-an-archery-competition/description/
 
 * Day 10: https://leetcode.com/problems/best-position-for-a-service-centre/description/
+
+* Day 11: https://leetcode.com/problems/maximum-binary-string-after-change/description/
