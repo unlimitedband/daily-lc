@@ -36,3 +36,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 11: https://leetcode.com/problems/maximum-binary-string-after-change/description/
 
 * Day 12: https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/description/
+
+* Day 13: https://leetcode.com/problems/lru-cache/description/
