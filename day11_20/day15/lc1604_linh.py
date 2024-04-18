@@ -28,6 +28,8 @@ def alert_names(key_name: List[str], key_time: List[str]) -> List[str]:
 
     r = []
     for k, v in dd.items():
+        if len(v) < 3:
+            continue
         heapq.heapify(v)
         cur, nxt = heapq.heappop(v), heapq.heappop(v)
         delta = nxt - cur
