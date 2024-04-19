@@ -42,3 +42,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 14: https://leetcode.com/problems/split-two-strings-to-make-palindrome/description/
 
 * Day 15: https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/description/
+
+* Day 16: https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/description/
