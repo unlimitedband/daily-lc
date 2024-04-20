@@ -7,10 +7,8 @@ defmodule Solution do
     |> case do
       false -> -1
       true  ->
-        l = Enum.map(l, fn i -> div(i-r, x) end)
         m = median(l)
-        Enum.map(l, fn i -> abs(i - m) end)
-        |> Enum.reduce(fn i, j -> i + j end)
+        l |> Enum.map(fn i -> abs(div(i-r, x) - div(m, x)) end) |> Enum.sum()
     end
   end
 
