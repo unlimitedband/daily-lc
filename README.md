@@ -46,3 +46,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 16: https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/description/
 
 * Day 17: https://leetcode.com/problems/minimum-moves-to-reach-target-score/description/
+
+* Day 18: https://leetcode.com/problems/beautiful-arrangement-ii/description/
