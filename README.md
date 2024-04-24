@@ -50,3 +50,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 18: https://leetcode.com/problems/beautiful-arrangement-ii/description/
 
 * Day 19: https://leetcode.com/problems/edit-distance/description/
+
+* Day 20: https://leetcode.com/problems/minimum-time-to-repair-cars/description/
