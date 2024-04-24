@@ -52,3 +52,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 19: https://leetcode.com/problems/edit-distance/description/
 
 * Day 20: https://leetcode.com/problems/minimum-time-to-repair-cars/description/
+
+* Day 21: https://leetcode.com/problems/print-zero-even-odd/description/
