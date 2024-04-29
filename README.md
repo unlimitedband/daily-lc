@@ -54,3 +54,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 20: https://leetcode.com/problems/minimum-time-to-repair-cars/description/
 
 * Day 21: https://leetcode.com/problems/print-zero-even-odd/description/
+
+* Day 22: https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/
