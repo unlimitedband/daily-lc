@@ -1,0 +1,25 @@
+name: Pick new challenge
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 17 * * *' # Run every morning at 00:00 AM GMT+7
+
+jobs:
+  pick_leetcode_challenge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install curl
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl
+      
+      - name: Get random challenge
+        run: |
+          response=$(curl --location 'https://leetcode.com/graphql/' \--header 'content-type: application/json' \--header 'referer: https://leetcode.com/problemset/' \--data '{"query":"\n    query randomQuestion($categorySlug: String, $filters: QuestionListFilterInput) {\n  randomQuestion(categorySlug: $categorySlug, filters: $filters) {\n    titleSlug\n  }\n}\n    ","variables":{"categorySlug":"all-code-essentials","filters":{}}}')
+          echo "$response" > response.json
+          slug = $(cat response.json | jq .data.randomQuestion.titleSlug )
+          echo "::set-output name=slug::$slug"
+          echo "Slug = $slug"
