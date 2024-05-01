@@ -56,3 +56,4 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 21: https://leetcode.com/problems/print-zero-even-odd/description/
 
 * Day 22: https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/
+* Day 23: https://leetcode.com/problems/find-the-missing-ids/description
