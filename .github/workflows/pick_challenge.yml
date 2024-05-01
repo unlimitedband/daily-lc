@@ -3,13 +3,15 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 17 * * *' # Run every morning at 00:00 AM GMT+7
+permissions:
+  contents: write
 
 jobs:
   pick_leetcode_challenge:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install curl
         run: |
@@ -17,9 +19,31 @@ jobs:
           sudo apt-get install -y curl
       
       - name: Get random challenge
+        id: pick
         run: |
           response=$(curl --location 'https://leetcode.com/graphql/' \--header 'content-type: application/json' \--header 'referer: https://leetcode.com/problemset/' \--data '{"query":"\n    query randomQuestion($categorySlug: String, $filters: QuestionListFilterInput) {\n  randomQuestion(categorySlug: $categorySlug, filters: $filters) {\n    titleSlug\n  }\n}\n    ","variables":{"categorySlug":"all-code-essentials","filters":{}}}')
           echo "$response" > response.json
-          slug = $(cat response.json | jq .data.randomQuestion.titleSlug )
+          slug=$(cat response.json | jq .data.randomQuestion.titleSlug )
           echo "::set-output name=slug::$slug"
-          echo "Slug = $slug"
+      
+      - name: Get leetcode date
+        id: date
+        run: |
+          s_date_seconds=$(date -d "2024-04-08" +%s)
+          now_seconds=$(date -u +%s)
+          diff=$(( (${now_seconds} - ${s_date_seconds}) / 86400 ))
+          echo "::set-output name=date::$diff"
+      
+      - name: Update README
+        run: |
+          prob="https://leetcode.com/problems/${{ steps.pick.outputs.slug }}/description"
+          echo "" >> README.md
+          echo "* Day ${{ steps.date.outputs.date }}: $prob" >> README.md
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "Pick challenge day ${{ steps.date.outputs.date }}"
+          git push origin
