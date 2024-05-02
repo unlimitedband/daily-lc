@@ -58,3 +58,4 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 22: https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/
 
 * Day 23: https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/description/
+* Day 24: https://leetcode.com/problems/maximum-performance-of-a-team/description
