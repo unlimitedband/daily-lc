@@ -61,3 +61,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 24: https://leetcode.com/problems/maximum-performance-of-a-team/description
 
 * Day 25: https://leetcode.com/problems/number-of-days-between-two-dates/description
+
+* Day 26: https://leetcode.com/problems/majority-element/description
