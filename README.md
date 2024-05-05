@@ -63,3 +63,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 25: https://leetcode.com/problems/number-of-days-between-two-dates/description
 
 * Day 26: https://leetcode.com/problems/majority-element/description
+
+* Day 27: https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/description
