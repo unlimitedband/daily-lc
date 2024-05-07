@@ -67,3 +67,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 27: https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/description
 
 * Day 28: https://leetcode.com/problems/random-flip-matrix/description
+
+* Day 29: https://leetcode.com/problems/apply-discount-every-n-orders/description
