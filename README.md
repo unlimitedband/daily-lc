@@ -71,3 +71,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 29: https://leetcode.com/problems/apply-discount-every-n-orders/description
 
 * Day 30: https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/description
+
+* Day 31: https://leetcode.com/problems/simple-bank-system/description
