@@ -75,3 +75,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 31: https://leetcode.com/problems/simple-bank-system/description
 
 * Day 32: https://leetcode.com/problems/letter-tile-possibilities/description
+
+* Day 33: https://leetcode.com/problems/sum-in-a-matrix/description
