@@ -77,3 +77,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 32: https://leetcode.com/problems/letter-tile-possibilities/description
 
 * Day 33: https://leetcode.com/problems/sum-in-a-matrix/description
+
+* Day 34: https://leetcode.com/problems/range-product-queries-of-powers/description
