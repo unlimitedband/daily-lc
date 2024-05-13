@@ -79,3 +79,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 33: https://leetcode.com/problems/sum-in-a-matrix/description
 
 * Day 34: https://leetcode.com/problems/range-product-queries-of-powers/description
+
+* Day 35: https://leetcode.com/problems/number-of-ways-to-build-house-of-cards/description
