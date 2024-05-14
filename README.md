@@ -81,3 +81,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 34: https://leetcode.com/problems/range-product-queries-of-powers/description
 
 * Day 35: https://leetcode.com/problems/number-of-ways-to-build-house-of-cards/description
+
+* Day 36: https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/description
