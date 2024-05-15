@@ -83,3 +83,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 35: https://leetcode.com/problems/number-of-ways-to-build-house-of-cards/description
 
 * Day 36: https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/description
+
+* Day 37: https://leetcode.com/problems/maximum-repeating-substring/description
