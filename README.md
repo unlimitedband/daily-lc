@@ -86,4 +86,4 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 
 * Day 37: https://leetcode.com/problems/maximum-repeating-substring/description
 
-* Day 38: https://leetcode.com/problems/ternary-expression-parser/description
+* Day 38: https://leetcode.com/problems/bulb-switcher/description/
