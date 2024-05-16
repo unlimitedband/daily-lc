@@ -85,3 +85,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 36: https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/description
 
 * Day 37: https://leetcode.com/problems/maximum-repeating-substring/description
+
+* Day 38: https://leetcode.com/problems/ternary-expression-parser/description
