@@ -87,3 +87,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 37: https://leetcode.com/problems/maximum-repeating-substring/description
 
 * Day 38: https://leetcode.com/problems/bulb-switcher/description/
+
+* Day 39: https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/description
