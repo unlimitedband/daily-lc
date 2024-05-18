@@ -89,3 +89,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 38: https://leetcode.com/problems/bulb-switcher/description/
 
 * Day 39: https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/description
+
+* Day 40: https://leetcode.com/problems/count-pairs-of-similar-strings/description
