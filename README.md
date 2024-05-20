@@ -93,3 +93,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 40: https://leetcode.com/problems/count-pairs-of-similar-strings/description
 
 * Day 41: https://leetcode.com/problems/sort-by/description
+
+* Day 42: https://leetcode.com/problems/count-apples-and-oranges/description
