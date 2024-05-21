@@ -95,3 +95,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 41: https://leetcode.com/problems/sort-by/description
 
 * Day 42: https://leetcode.com/problems/count-apples-and-oranges/description
+
+* Day 43: https://leetcode.com/problems/maximum-units-on-a-truck/description
