@@ -97,3 +97,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 42: https://leetcode.com/problems/count-apples-and-oranges/description
 
 * Day 43: https://leetcode.com/problems/maximum-units-on-a-truck/description
+
+* Day 44: https://leetcode.com/problems/minimum-total-distance-traveled/description
