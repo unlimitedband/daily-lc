@@ -105,3 +105,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 46: https://leetcode.com/problems/coin-change-ii/description
 
 * Day 47: https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/description
+
+* Day 48: https://leetcode.com/problems/all-paths-from-source-lead-to-destination/description
