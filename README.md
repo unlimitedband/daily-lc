@@ -107,3 +107,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 47: https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/description
 
 * Day 48: https://leetcode.com/problems/all-paths-from-source-lead-to-destination/description
+
+* Day 49: https://leetcode.com/problems/remove-k-digits/description
