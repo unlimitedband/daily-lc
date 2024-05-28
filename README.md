@@ -109,3 +109,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 48: https://leetcode.com/problems/all-paths-from-source-lead-to-destination/description
 
 * Day 49: https://leetcode.com/problems/remove-k-digits/description
+
+* Day 50: https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/description
