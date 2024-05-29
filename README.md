@@ -111,3 +111,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 49: https://leetcode.com/problems/remove-k-digits/description
 
 * Day 50: https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k/description
+
+* Day 51: https://leetcode.com/problems/parallel-courses-iii/description
