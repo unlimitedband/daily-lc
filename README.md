@@ -119,3 +119,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 54: https://leetcode.com/problems/longest-turbulent-subarray/description
 
 * Day 55: https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description
+
+* Day 56: https://leetcode.com/problems/sudoku-solver/description
