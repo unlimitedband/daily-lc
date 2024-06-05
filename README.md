@@ -123,3 +123,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 56: https://leetcode.com/problems/sudoku-solver/description
 
 * Day 57: https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/description
+
+* Day 58: https://leetcode.com/problems/tournament-winners/description
