@@ -117,3 +117,9 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 52: https://leetcode.com/problems/robot-collisions/description
 
 * Day 54: https://leetcode.com/problems/longest-turbulent-subarray/description
+
+* Day 55: https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description
+
+* Day 56: https://leetcode.com/problems/sudoku-solver/description
+
+* Day 57: https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/description
