@@ -135,3 +135,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 62: https://leetcode.com/problems/find-the-child-who-has-the-ball-after-k-seconds/description
 
 * Day 63: https://leetcode.com/problems/car-pooling/description
+
+* Day 64: https://leetcode.com/problems/count-vowel-substrings-of-a-string/description
