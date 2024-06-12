@@ -137,3 +137,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 63: https://leetcode.com/problems/car-pooling/description
 
 * Day 64: https://leetcode.com/problems/count-vowel-substrings-of-a-string/description
+
+* Day 65: https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/description
