@@ -139,3 +139,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 64: https://leetcode.com/problems/count-vowel-substrings-of-a-string/description
 
 * Day 65: https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/description
+
+* Day 66: https://leetcode.com/problems/implement-magic-dictionary/description
