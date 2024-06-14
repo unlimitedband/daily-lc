@@ -141,3 +141,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 65: https://leetcode.com/problems/number-of-spaces-cleaning-robot-cleaned/description
 
 * Day 66: https://leetcode.com/problems/implement-magic-dictionary/description
+
+* Day 67: https://leetcode.com/problems/sliding-window-maximum/description
