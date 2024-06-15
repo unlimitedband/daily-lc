@@ -143,3 +143,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 66: https://leetcode.com/problems/implement-magic-dictionary/description
 
 * Day 67: https://leetcode.com/problems/sliding-window-maximum/description
+
+* Day 68: https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-i/description
