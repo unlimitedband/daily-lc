@@ -149,3 +149,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 69: https://leetcode.com/problems/maximum-sum-score-of-array/description
 
 * Day 70: https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/description
+
+* Day 71: https://leetcode.com/problems/subdomain-visit-count/description
