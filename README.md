@@ -151,3 +151,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 70: https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/description
 
 * Day 71: https://leetcode.com/problems/subdomain-visit-count/description
+
+* Day 72: https://leetcode.com/problems/the-number-of-beautiful-subsets/description
