@@ -153,3 +153,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 71: https://leetcode.com/problems/subdomain-visit-count/description
 
 * Day 72: https://leetcode.com/problems/the-number-of-beautiful-subsets/description
+
+* Day 73: https://leetcode.com/problems/find-maximal-uncovered-ranges/description
