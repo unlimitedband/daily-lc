@@ -155,3 +155,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 72: https://leetcode.com/problems/the-number-of-beautiful-subsets/description
 
 * Day 73: https://leetcode.com/problems/find-maximal-uncovered-ranges/description
+
+* Day 74: https://leetcode.com/problems/occurrences-after-bigram/description
