@@ -157,3 +157,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 73: https://leetcode.com/problems/find-maximal-uncovered-ranges/description
 
 * Day 74: https://leetcode.com/problems/occurrences-after-bigram/description
+
+* Day 75: https://leetcode.com/problems/path-sum-ii/description
