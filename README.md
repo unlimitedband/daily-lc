@@ -159,3 +159,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 74: https://leetcode.com/problems/occurrences-after-bigram/description
 
 * Day 75: https://leetcode.com/problems/path-sum-ii/description
+
+* Day 76: https://leetcode.com/problems/longest-common-suffix-queries/description
