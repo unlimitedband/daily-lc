@@ -161,3 +161,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 75: https://leetcode.com/problems/path-sum-ii/description
 
 * Day 76: https://leetcode.com/problems/longest-common-suffix-queries/description
+
+* Day 77: https://leetcode.com/problems/detonate-the-maximum-bombs/description
