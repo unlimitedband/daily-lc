@@ -163,3 +163,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 76: https://leetcode.com/problems/longest-common-suffix-queries/description
 
 * Day 77: https://leetcode.com/problems/detonate-the-maximum-bombs/description
+
+* Day 78: https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/description
