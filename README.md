@@ -165,3 +165,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 77: https://leetcode.com/problems/detonate-the-maximum-bombs/description
 
 * Day 78: https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/description
+
+* Day 79: https://leetcode.com/problems/cyclically-rotating-a-grid/description
