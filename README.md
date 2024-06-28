@@ -169,3 +169,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 79: https://leetcode.com/problems/cyclically-rotating-a-grid/description
 
 * Day 80: https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/description
+
+* Day 81: https://leetcode.com/problems/find-pattern-in-infinite-stream-i/description
