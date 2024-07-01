@@ -175,3 +175,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 82: https://leetcode.com/problems/calculate-trapping-rain-water/description
 
 * Day 83: https://leetcode.com/problems/employee-bonus/description
+
+* Day 84: https://leetcode.com/problems/nested-list-weight-sum/description
