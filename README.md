@@ -177,3 +177,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 83: https://leetcode.com/problems/employee-bonus/description
 
 * Day 84: https://leetcode.com/problems/nested-list-weight-sum/description
+
+* Day 85: https://leetcode.com/problems/construct-binary-tree-from-string/description
