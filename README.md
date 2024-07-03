@@ -179,3 +179,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 84: https://leetcode.com/problems/nested-list-weight-sum/description
 
 * Day 85: https://leetcode.com/problems/construct-binary-tree-from-string/description
+
+* Day 86: https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/description
