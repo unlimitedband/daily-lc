@@ -181,3 +181,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 85: https://leetcode.com/problems/construct-binary-tree-from-string/description
 
 * Day 86: https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/description
+
+* Day 87: https://leetcode.com/problems/make-object-immutable/description
