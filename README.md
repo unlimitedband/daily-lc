@@ -191,3 +191,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 90: https://leetcode.com/problems/string-compression-iii/description
 
 * Day 91: https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/description
+
+* Day 92: https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/description
