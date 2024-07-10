@@ -193,3 +193,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 91: https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/description
 
 * Day 92: https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/description
+
+* Day 93: https://leetcode.com/problems/base-7/description
