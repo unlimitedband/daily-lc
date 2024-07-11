@@ -195,3 +195,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 92: https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/description
 
 * Day 93: https://leetcode.com/problems/base-7/description
+
+* Day 94: https://leetcode.com/problems/maximal-square/description
