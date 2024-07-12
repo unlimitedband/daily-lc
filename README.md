@@ -197,3 +197,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 93: https://leetcode.com/problems/base-7/description
 
 * Day 94: https://leetcode.com/problems/maximal-square/description
+
+* Day 95: https://leetcode.com/problems/defuse-the-bomb/description
