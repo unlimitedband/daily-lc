@@ -199,3 +199,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 94: https://leetcode.com/problems/maximal-square/description
 
 * Day 95: https://leetcode.com/problems/defuse-the-bomb/description
+
+* Day 96: https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/description
