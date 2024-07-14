@@ -201,3 +201,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 95: https://leetcode.com/problems/defuse-the-bomb/description
 
 * Day 96: https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/description
+
+* Day 97: https://leetcode.com/problems/cherry-pickup-ii/description
