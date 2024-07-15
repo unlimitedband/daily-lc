@@ -203,3 +203,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 96: https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/description
 
 * Day 97: https://leetcode.com/problems/cherry-pickup-ii/description
+
+* Day 98: https://leetcode.com/problems/minimum-operations-to-make-numbers-non-positive/description
