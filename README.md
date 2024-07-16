@@ -205,3 +205,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 97: https://leetcode.com/problems/cherry-pickup-ii/description
 
 * Day 98: https://leetcode.com/problems/minimum-operations-to-make-numbers-non-positive/description
+
+* Day 99: https://leetcode.com/problems/longest-alternating-subarray/description
