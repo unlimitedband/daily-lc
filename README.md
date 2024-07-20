@@ -213,3 +213,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 101: https://leetcode.com/problems/valid-phone-numbers/description
 
 * Day 102: https://leetcode.com/problems/customer-order-frequency/description
+
+* Day 103: https://leetcode.com/problems/least-operators-to-express-number/description
