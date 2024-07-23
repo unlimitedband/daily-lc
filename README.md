@@ -219,3 +219,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 104: https://leetcode.com/problems/partition-equal-subset-sum/description
 
 * Day 105: https://leetcode.com/problems/maximum-depth-of-binary-tree/description
+
+* Day 106: https://leetcode.com/problems/minimum-moves-to-get-a-peaceful-board/description
