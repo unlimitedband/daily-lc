@@ -221,3 +221,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 105: https://leetcode.com/problems/maximum-depth-of-binary-tree/description
 
 * Day 106: https://leetcode.com/problems/minimum-moves-to-get-a-peaceful-board/description
+
+* Day 107: https://leetcode.com/problems/count-good-numbers/description
