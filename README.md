@@ -223,3 +223,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 106: https://leetcode.com/problems/minimum-moves-to-get-a-peaceful-board/description
 
 * Day 107: https://leetcode.com/problems/count-good-numbers/description
+
+* Day 108: https://leetcode.com/problems/minimum-operations-to-make-the-array-k-increasing/description
