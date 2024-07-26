@@ -225,3 +225,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 107: https://leetcode.com/problems/count-good-numbers/description
 
 * Day 108: https://leetcode.com/problems/minimum-operations-to-make-the-array-k-increasing/description
+
+* Day 109: https://leetcode.com/problems/number-of-trusted-contacts-of-a-customer/description
