@@ -237,3 +237,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 113: https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/description
 
 * Day 114: https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/description
+
+* Day 115: https://leetcode.com/problems/01-matrix/description
