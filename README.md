@@ -239,3 +239,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 114: https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/description
 
 * Day 115: https://leetcode.com/problems/01-matrix/description
+
+* Day 116: https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips-ii/description
