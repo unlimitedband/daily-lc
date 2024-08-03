@@ -241,3 +241,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 115: https://leetcode.com/problems/01-matrix/description
 
 * Day 116: https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips-ii/description
+
+* Day 117: https://leetcode.com/problems/employees-earning-more-than-their-managers/description
