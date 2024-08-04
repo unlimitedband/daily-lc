@@ -243,3 +243,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 116: https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips-ii/description
 
 * Day 117: https://leetcode.com/problems/employees-earning-more-than-their-managers/description
+
+* Day 118: https://leetcode.com/problems/design-a-stack-with-increment-operation/description
