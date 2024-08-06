@@ -247,3 +247,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 118: https://leetcode.com/problems/design-a-stack-with-increment-operation/description
 
 * Day 119: https://leetcode.com/problems/invalid-tweets/description
+
+* Day 120: https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/description
