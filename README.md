@@ -249,3 +249,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 119: https://leetcode.com/problems/invalid-tweets/description
 
 * Day 120: https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/description
+
+* Day 121: https://leetcode.com/problems/method-chaining/description
