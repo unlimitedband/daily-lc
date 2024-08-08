@@ -251,3 +251,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 120: https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/description
 
 * Day 121: https://leetcode.com/problems/method-chaining/description
+
+* Day 122: https://leetcode.com/problems/find-the-team-size/description
