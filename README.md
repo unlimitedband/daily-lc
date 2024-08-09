@@ -253,3 +253,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 121: https://leetcode.com/problems/method-chaining/description
 
 * Day 122: https://leetcode.com/problems/find-the-team-size/description
+
+* Day 123: https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/description
