@@ -255,3 +255,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 122: https://leetcode.com/problems/find-the-team-size/description
 
 * Day 123: https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/description
+
+* Day 124: https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/description
