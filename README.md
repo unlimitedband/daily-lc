@@ -257,3 +257,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 123: https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/description
 
 * Day 124: https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/description
+
+* Day 125: https://leetcode.com/problems/minimum-path-sum/description
