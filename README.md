@@ -259,3 +259,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 124: https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/description
 
 * Day 125: https://leetcode.com/problems/minimum-path-sum/description
+
+* Day 126: https://leetcode.com/problems/perfect-squares/description
