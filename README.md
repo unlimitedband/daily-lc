@@ -263,3 +263,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 126: https://leetcode.com/problems/perfect-squares/description
 
 * Day 127: https://leetcode.com/problems/minimum-subarrays-in-a-valid-split/description
+
+* Day 128: https://leetcode.com/problems/friends-of-appropriate-ages/description
