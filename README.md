@@ -265,3 +265,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 127: https://leetcode.com/problems/minimum-subarrays-in-a-valid-split/description
 
 * Day 128: https://leetcode.com/problems/friends-of-appropriate-ages/description
+
+* Day 129: https://leetcode.com/problems/number-of-ships-in-a-rectangle/description
