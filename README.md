@@ -267,3 +267,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 128: https://leetcode.com/problems/friends-of-appropriate-ages/description
 
 * Day 129: https://leetcode.com/problems/number-of-ships-in-a-rectangle/description
+
+* Day 130: https://leetcode.com/problems/count-the-number-of-inversions/description
