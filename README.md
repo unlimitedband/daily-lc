@@ -269,3 +269,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 129: https://leetcode.com/problems/number-of-ships-in-a-rectangle/description
 
 * Day 130: https://leetcode.com/problems/count-the-number-of-inversions/description
+
+* Day 131: https://leetcode.com/problems/statistics-from-a-large-sample/description
