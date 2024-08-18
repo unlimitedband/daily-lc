@@ -271,3 +271,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 130: https://leetcode.com/problems/count-the-number-of-inversions/description
 
 * Day 131: https://leetcode.com/problems/statistics-from-a-large-sample/description
+
+* Day 132: https://leetcode.com/problems/first-unique-character-in-a-string/description
