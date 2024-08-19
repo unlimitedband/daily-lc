@@ -273,3 +273,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 131: https://leetcode.com/problems/statistics-from-a-large-sample/description
 
 * Day 132: https://leetcode.com/problems/first-unique-character-in-a-string/description
+
+* Day 133: https://leetcode.com/problems/capital-gainloss/description
