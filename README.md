@@ -277,3 +277,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 133: https://leetcode.com/problems/capital-gainloss/description
 
 * Day 134: https://leetcode.com/problems/maximal-rectangle/description
+
+* Day 135: https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/description
