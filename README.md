@@ -279,3 +279,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 134: https://leetcode.com/problems/maximal-rectangle/description
 
 * Day 135: https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/description
+
+* Day 136: https://leetcode.com/problems/leaf-similar-trees/description
