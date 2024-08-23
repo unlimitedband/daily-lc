@@ -281,3 +281,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 135: https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/description
 
 * Day 136: https://leetcode.com/problems/leaf-similar-trees/description
+
+* Day 137: https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description
