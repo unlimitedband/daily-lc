@@ -283,3 +283,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 136: https://leetcode.com/problems/leaf-similar-trees/description
 
 * Day 137: https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description
+
+* Day 138: https://leetcode.com/problems/top-three-wineries/description
