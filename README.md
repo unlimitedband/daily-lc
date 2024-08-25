@@ -285,3 +285,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 137: https://leetcode.com/problems/minimum-bit-flips-to-convert-number/description
 
 * Day 138: https://leetcode.com/problems/top-three-wineries/description
+
+* Day 139: https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/description
