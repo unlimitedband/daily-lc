@@ -287,3 +287,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 138: https://leetcode.com/problems/top-three-wineries/description
 
 * Day 139: https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/description
+
+* Day 140: https://leetcode.com/problems/replace-elements-in-an-array/description
