@@ -289,3 +289,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 139: https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/description
 
 * Day 140: https://leetcode.com/problems/replace-elements-in-an-array/description
+
+* Day 141: https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/description
