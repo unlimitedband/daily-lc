@@ -291,3 +291,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 140: https://leetcode.com/problems/replace-elements-in-an-array/description
 
 * Day 141: https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/description
+
+* Day 142: https://leetcode.com/problems/json-deep-equal/description
