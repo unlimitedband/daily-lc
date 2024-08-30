@@ -295,3 +295,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 142: https://leetcode.com/problems/json-deep-equal/description
 
 * Day 143: https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description
+
+* Day 144: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description
