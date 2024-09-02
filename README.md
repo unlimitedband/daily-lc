@@ -301,3 +301,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 145: https://leetcode.com/problems/maximum-number-of-ones/description
 
 * Day 146: https://leetcode.com/problems/reaching-points/description
+
+* Day 147: https://leetcode.com/problems/search-suggestions-system/description
