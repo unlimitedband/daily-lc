@@ -303,3 +303,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 146: https://leetcode.com/problems/reaching-points/description
 
 * Day 147: https://leetcode.com/problems/search-suggestions-system/description
+
+* Day 148: https://leetcode.com/problems/find-the-integer-added-to-array-ii/description
