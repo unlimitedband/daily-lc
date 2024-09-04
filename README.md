@@ -305,3 +305,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 147: https://leetcode.com/problems/search-suggestions-system/description
 
 * Day 148: https://leetcode.com/problems/find-the-integer-added-to-array-ii/description
+
+* Day 149: https://leetcode.com/problems/last-day-where-you-can-still-cross/description
