@@ -309,3 +309,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 149: https://leetcode.com/problems/last-day-where-you-can-still-cross/description
 
 * Day 150: https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/description
+
+* Day 151: https://leetcode.com/problems/kth-smallest-subarray-sum/description
