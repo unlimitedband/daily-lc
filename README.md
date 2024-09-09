@@ -315,3 +315,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 152: https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/description
 
 * Day 153: https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/description
+
+* Day 154: https://leetcode.com/problems/k-inverse-pairs-array/description
