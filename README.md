@@ -319,3 +319,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 154: https://leetcode.com/problems/k-inverse-pairs-array/description
 
 * Day 155: https://leetcode.com/problems/permutation-in-string/description
+
+* Day 156: https://leetcode.com/problems/find-the-peaks/description
