@@ -321,3 +321,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 155: https://leetcode.com/problems/permutation-in-string/description
 
 * Day 156: https://leetcode.com/problems/find-the-peaks/description
+
+* Day 157: https://leetcode.com/problems/erect-the-fence/description
