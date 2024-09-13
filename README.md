@@ -323,3 +323,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 156: https://leetcode.com/problems/find-the-peaks/description
 
 * Day 157: https://leetcode.com/problems/erect-the-fence/description
+
+* Day 158: https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/description
