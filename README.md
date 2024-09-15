@@ -327,3 +327,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 158: https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/description
 
 * Day 159: https://leetcode.com/problems/maximum-profitable-triplets-with-increasing-prices-ii/description
+
+* Day 160: https://leetcode.com/problems/number-of-valid-words-in-a-sentence/description
