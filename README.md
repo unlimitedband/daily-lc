@@ -331,3 +331,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 160: https://leetcode.com/problems/number-of-valid-words-in-a-sentence/description
 
 * Day 161: https://leetcode.com/problems/subsets-ii/description
+
+* Day 162: https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/description
