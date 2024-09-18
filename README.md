@@ -333,3 +333,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 161: https://leetcode.com/problems/subsets-ii/description
 
 * Day 162: https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/description
+
+* Day 163: https://leetcode.com/problems/design-log-storage-system/description
