@@ -343,3 +343,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 166: https://leetcode.com/problems/find-duplicate-subtrees/description
 
 * Day 167: https://leetcode.com/problems/queries-quality-and-percentage/description
+
+* Day 168: https://leetcode.com/problems/sort-even-and-odd-indices-independently/description
