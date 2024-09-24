@@ -345,3 +345,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 167: https://leetcode.com/problems/queries-quality-and-percentage/description
 
 * Day 168: https://leetcode.com/problems/sort-even-and-odd-indices-independently/description
+
+* Day 169: https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/description
