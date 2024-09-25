@@ -347,3 +347,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 168: https://leetcode.com/problems/sort-even-and-odd-indices-independently/description
 
 * Day 169: https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/description
+
+* Day 170: https://leetcode.com/problems/find-the-substring-with-maximum-cost/description
