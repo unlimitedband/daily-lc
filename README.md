@@ -349,3 +349,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 169: https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/description
 
 * Day 170: https://leetcode.com/problems/find-the-substring-with-maximum-cost/description
+
+* Day 171: https://leetcode.com/problems/flatten-2d-vector/description
