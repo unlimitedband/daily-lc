@@ -351,3 +351,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 170: https://leetcode.com/problems/find-the-substring-with-maximum-cost/description
 
 * Day 171: https://leetcode.com/problems/flatten-2d-vector/description
+
+* Day 172: https://leetcode.com/problems/add-two-numbers-ii/description
