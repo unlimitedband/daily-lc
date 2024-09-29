@@ -355,3 +355,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 172: https://leetcode.com/problems/add-two-numbers-ii/description
 
 * Day 173: https://leetcode.com/problems/permutations-ii/description
+
+* Day 174: https://leetcode.com/problems/minimum-garden-perimeter-to-collect-enough-apples/description
