@@ -359,3 +359,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 174: https://leetcode.com/problems/minimum-garden-perimeter-to-collect-enough-apples/description
 
 * Day 175: https://leetcode.com/problems/valid-palindrome-iv/description
+
+* Day 176: https://leetcode.com/problems/largest-rectangle-in-histogram/description
