@@ -365,3 +365,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 177: https://leetcode.com/problems/count-stepping-numbers-in-range/description
 
 * Day 178: https://leetcode.com/problems/find-pivot-index/description
+
+* Day 179: https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/description
