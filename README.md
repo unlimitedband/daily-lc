@@ -367,3 +367,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 178: https://leetcode.com/problems/find-pivot-index/description
 
 * Day 179: https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/description
+
+* Day 180: https://leetcode.com/problems/all-divisions-with-the-highest-score-of-a-binary-array/description
