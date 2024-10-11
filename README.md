@@ -379,3 +379,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 184: https://leetcode.com/problems/find-longest-self-contained-substring/description
 
 * Day 185: https://leetcode.com/problems/find-k-closest-elements/description
+
+* Day 186: https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/description
