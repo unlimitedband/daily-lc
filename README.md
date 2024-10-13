@@ -383,3 +383,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 186: https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/description
 
 * Day 187: https://leetcode.com/problems/maximum-height-by-stacking-cuboids/description
+
+* Day 188: https://leetcode.com/problems/simplified-fractions/description
