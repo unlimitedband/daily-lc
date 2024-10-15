@@ -387,3 +387,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 188: https://leetcode.com/problems/simplified-fractions/description
 
 * Day 189: https://leetcode.com/problems/word-ladder-ii/description
+
+* Day 190: https://leetcode.com/problems/fancy-sequence/description
