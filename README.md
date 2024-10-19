@@ -395,3 +395,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 192: https://leetcode.com/problems/nth-digit/description
 
 * Day 193: https://leetcode.com/problems/count-of-smaller-numbers-after-self/description
+
+* Day 194: https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description
