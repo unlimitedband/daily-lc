@@ -399,3 +399,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 194: https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description
 
 * Day 195: https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/description
+
+* Day 196: https://leetcode.com/problems/minimum-length-of-string-after-operations/description
