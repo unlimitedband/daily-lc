@@ -403,3 +403,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 196: https://leetcode.com/problems/minimum-length-of-string-after-operations/description
 
 * Day 197: https://leetcode.com/problems/employee-free-time/description
+
+* Day 198: https://leetcode.com/problems/count-pairs-of-nodes/description
