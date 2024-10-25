@@ -407,3 +407,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 198: https://leetcode.com/problems/count-pairs-of-nodes/description
 
 * Day 199: https://leetcode.com/problems/design-an-atm-machine/description
+
+* Day 200: https://leetcode.com/problems/delete-columns-to-make-sorted-iii/description
