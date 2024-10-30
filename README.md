@@ -417,3 +417,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 203: https://leetcode.com/problems/range-sum-of-bst/description
 
 * Day 204: https://leetcode.com/problems/minimum-suffix-flips/description
+
+* Day 205: https://leetcode.com/problems/plates-between-candles/description
