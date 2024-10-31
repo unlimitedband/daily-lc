@@ -419,3 +419,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 204: https://leetcode.com/problems/minimum-suffix-flips/description
 
 * Day 205: https://leetcode.com/problems/plates-between-candles/description
+
+* Day 206: https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/description
