@@ -423,3 +423,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 206: https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/description
 
 * Day 207: https://leetcode.com/problems/letter-case-permutation/description
+
+* Day 208: https://leetcode.com/problems/find-greatest-common-divisor-of-array/description
