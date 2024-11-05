@@ -429,3 +429,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 209: https://leetcode.com/problems/palindrome-linked-list/description
 
 * Day 210: https://leetcode.com/problems/rotting-oranges/description
+
+* Day 211: https://leetcode.com/problems/strange-printer/description
