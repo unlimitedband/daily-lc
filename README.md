@@ -431,3 +431,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 210: https://leetcode.com/problems/rotting-oranges/description
 
 * Day 211: https://leetcode.com/problems/strange-printer/description
+
+* Day 212: https://leetcode.com/problems/recyclable-and-low-fat-products/description
