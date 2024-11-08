@@ -435,3 +435,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 212: https://leetcode.com/problems/recyclable-and-low-fat-products/description
 
 * Day 213: https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description
+
+* Day 214: https://leetcode.com/problems/odd-even-linked-list/description
