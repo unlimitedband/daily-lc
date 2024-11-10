@@ -439,3 +439,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 214: https://leetcode.com/problems/odd-even-linked-list/description
 
 * Day 215: https://leetcode.com/problems/find-the-peaks/description
+
+* Day 216: https://leetcode.com/problems/minimum-costs-using-the-train-line/description
