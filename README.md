@@ -443,3 +443,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 216: https://leetcode.com/problems/minimum-costs-using-the-train-line/description
 
 * Day 217: https://leetcode.com/problems/game-of-life/description
+
+* Day 218: https://leetcode.com/problems/maximum-palindromes-after-operations/description
