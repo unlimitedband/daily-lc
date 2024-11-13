@@ -445,3 +445,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 217: https://leetcode.com/problems/game-of-life/description
 
 * Day 218: https://leetcode.com/problems/maximum-palindromes-after-operations/description
+
+* Day 219: https://leetcode.com/problems/maximal-range-that-each-element-is-maximum-in-it/description
