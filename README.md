@@ -451,3 +451,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 220: https://leetcode.com/problems/maximize-palindrome-length-from-subsequences/description
 
 * Day 221: https://leetcode.com/problems/count-of-interesting-subarrays/description
+
+* Day 222: https://leetcode.com/problems/n-queens/description
