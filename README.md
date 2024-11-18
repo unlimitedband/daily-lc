@@ -455,3 +455,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 222: https://leetcode.com/problems/n-queens/description
 
 * Day 223: https://leetcode.com/problems/bag-of-tokens/description
+
+* Day 224: https://leetcode.com/problems/split-the-array/description
