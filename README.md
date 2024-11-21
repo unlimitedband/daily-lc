@@ -461,3 +461,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 225: https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/description
 
 * Day 226: https://leetcode.com/problems/undefined-to-null/description
+
+* Day 227: https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/description
