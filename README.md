@@ -463,3 +463,5 @@ Mỗi ngày pick một challenge ngẫu nhiên từ leetcode.
 * Day 226: https://leetcode.com/problems/undefined-to-null/description
 
 * Day 227: https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/description
+
+* Day 228: https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-ii/description
