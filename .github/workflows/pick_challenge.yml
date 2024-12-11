@@ -29,10 +29,10 @@ jobs:
       - name: Get leetcode date
         id: date
         run: |
-          s_date_seconds=$(date -d "2024-04-08" +%s)
+          s_date_seconds=$(date -d "2024-12-11" +%s)
           now_seconds=$(date -u +%s)
           diff=$(( (${now_seconds} - ${s_date_seconds}) / 86400 ))
-          echo "::set-output name=date::$diff"
+          echo "::set-output name=date::$diff + 57"
       
       - name: Update README
         run: |
