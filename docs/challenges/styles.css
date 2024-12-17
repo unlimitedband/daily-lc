@@ -1,0 +1,106 @@
+/* Tổng quan cho body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Đảm bảo body chiếm ít nhất 100% chiều cao của cửa sổ */
+}
+
+/* Header của trang */
+header {
+    background-color: #2f3c56;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Phần chính của nội dung (dễ chỉnh độ dài nếu cần) */
+main {
+    flex-grow: 1; /* Chiếm không gian còn lại, đẩy footer xuống dưới */
+}
+
+/* Phần bảng chính */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header của bảng */
+table thead {
+    background-color: #eeeeee;
+}
+
+table th {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 1rem;
+    color: #2f3c56;
+}
+
+/* Các dòng của bảng */
+table tbody tr {
+    transition: background-color 0.2s;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+table tbody tr:hover {
+    background-color: #f1f7ff;
+}
+
+/* Các ô dữ liệu */
+table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95rem;
+}
+
+/* Nút Go to Challenge */
+.arrow-btn {
+    background-color: #3c8dbc;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.arrow-btn:hover {
+    background-color: #357ca5;
+}
+
+.arrow-btn:focus {
+    outline: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2f3c56;
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    position: relative;
+    width: 100%;
+}

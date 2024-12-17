@@ -2,7 +2,8 @@ name: Pick new challenge
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 17 * * *' # Run every morning at 00:00 AM GMT+7
+    - cron: '0 17 * * *' # Run every day at 00:00 AM GMT+7
+
 permissions:
   contents: write
 
@@ -13,37 +14,90 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Install curl
+      - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y curl
-      
+          sudo apt-get install -y curl jq
+
+      - name: Generate random difficulty
+        id: random_difficulty
+        run: |
+          # Create an array with the possible difficulty levels
+          difficulties=("EASY" "MEDIUM" "HARD")
+          
+          # Get a random index from the array
+          random_index=$((RANDOM % 3))
+          
+          # Set the random difficulty
+          selected_difficulty="${difficulties[$random_index]}"
+          
+          # Output the selected difficulty to an environment file
+          echo "SELECTED_DIFFICULTY=$selected_difficulty" >> $GITHUB_ENV
+
       - name: Get random challenge
         id: pick
         run: |
-          response=$(curl --location 'https://leetcode.com/graphql/' \--header 'content-type: application/json' \--header 'referer: https://leetcode.com/problemset/' \--data '{"query":"\n    query randomQuestion($categorySlug: String, $filters: QuestionListFilterInput) {\n  randomQuestion(categorySlug: $categorySlug, filters: $filters) {\n    titleSlug\n  }\n}\n    ","variables":{"categorySlug":"all-code-essentials","filters":{}}}')
+          # Use the difficulty from the environment
+          response=$(curl --location 'https://leetcode.com/graphql/' \
+            --header 'content-type: application/json' \
+            --header 'referer: https://leetcode.com/problemset/' \
+            --data "{
+              \"query\": \"query randomQuestion(\$categorySlug: String, \$filters: QuestionListFilterInput) { randomQuestion(categorySlug: \$categorySlug, filters: \$filters) { titleSlug title difficulty } }\",
+              \"variables\": {
+                \"categorySlug\": \"all-code-essentials\",
+                \"filters\": { \"difficulty\": \"${{ env.SELECTED_DIFFICULTY }}\" }
+              }
+            }")
           echo "$response" > response.json
-          slug=$(cat response.json | jq .data.randomQuestion.titleSlug )
-          echo "::set-output name=slug::$slug"
-      
-      - name: Get leetcode date
-        id: date
+          slug=$(cat response.json | jq -r .data.randomQuestion.titleSlug)
+          title=$(cat response.json | jq -r .data.randomQuestion.title)
+          difficulty=$(cat response.json | jq -r .data.randomQuestion.difficulty | tr '[:lower:]' '[:upper:]') # Ensure uppercase
+
+          # Output slug, title, and difficulty to environment file
+          echo "SLUG=$slug" >> $GITHUB_ENV
+          echo "TITLE=$title" >> $GITHUB_ENV
+          echo "DIFFICULTY=$difficulty" >> $GITHUB_ENV
+
+      - name: Ensure data directory exists and update challenges.json
         run: |
-          s_date_seconds=$(date -d "2024-12-11" +%s)
-          now_seconds=$(date -u +%s)
-          diff=$(( (${now_seconds} - ${s_date_seconds}) / 86400 ))
-          echo "::set-output name=date::$diff + 57"
-      
-      - name: Update README
-        run: |
-          prob="https://leetcode.com/problems/${{ steps.pick.outputs.slug }}/description"
-          echo "" >> README.md
-          echo "* Day ${{ steps.date.outputs.date }}: $prob" >> README.md
-      
+          # Ensure the data directory exists
+          mkdir -p docs/challenges/data
+
+          # Check if docs/challenges/data/challenges.json exists and display its content before modification
+          echo "Before modification, content of docs/challenges/data/challenges.json:"
+          cat docs/challenges/data/challenges.json || echo "File not found, creating new one"
+
+          # Check if docs/challenges/data/challenges.json exists, if not create it with empty array
+          if [ ! -f docs/challenges/data/challenges.json ]; then
+            echo "[]" > docs/challenges/data/challenges.json
+          fi
+
+          # Append new challenge to the JSON file
+          prob="https://leetcode.com/problems/${{ env.SLUG }}/description"
+          day=$(date '+%d-%m-%Y %H:%M %Z') # Format with GMT+7
+          challenge_entry="{\"day\": \"$day\", \"title\": \"${{ env.TITLE }}\", \"url\": \"$prob\", \"difficulty\": \"${{ env.DIFFICULTY }}\"}"
+
+          # Use jq to append the new challenge to the JSON file
+          jq ". += [$challenge_entry]" docs/challenges/data/challenges.json > docs/challenges/data/challenges.tmp.json
+          mv docs/challenges/data/challenges.tmp.json docs/challenges/data/challenges.json
+
+          # Debug: Show the contents of docs/challenges/data/challenges.json after modification
+          echo "After modification, content of docs/challenges/data/challenges.json:"
+          cat docs/challenges/data/challenges.json
+
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add README.md
-          git commit -m "Pick challenge day ${{ steps.date.outputs.date }}"
+          
+          # Ensure changes are staged
+          git add docs/challenges/data/challenges.json
+
+          # Check if changes are staged
+          git status
+
+          # Commit the changes if there are any
+          git commit -m "Pick challenge day ${{ env.DAY }}" || echo "No changes to commit"
+          
+          # Push changes to repository
           git push origin
