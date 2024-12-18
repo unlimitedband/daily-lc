@@ -3,9 +3,9 @@ name: Check commits and update submit_log
 on:
   push:
     branches:
-      - main
+      - main  
     paths:
-      - 'code/**' 
+      - 'code/**'  
 
 jobs:
   check_commits:
@@ -37,10 +37,11 @@ jobs:
             fi
           done <<< "$commits"
 
-          # Chuyển mảng người commit thành chuỗi JSON
+          # Chuyển mảng người commit thành chuỗi JSON hợp lệ
           users_json=$(printf '"%s", ' "${users[@]}")
           users_json="[${users_json%, }]"
 
+          echo "USERS_JSON=$users_json"
           # Lưu kết quả vào biến môi trường
           echo "USERS_JSON=$users_json" >> $GITHUB_ENV
           echo "DATE=$today" >> $GITHUB_ENV
@@ -67,7 +68,7 @@ jobs:
 
           if [ "$existing_entry" != "null" ]; then
             # Nếu ngày hôm nay đã có trong log, thêm người commit vào danh sách hiện có
-            updated_users=$(echo "$existing_entry" | jq --argjson new_users "$USERS_JSON" '.users += $new_users | unique')
+            updated_users=$(echo "$existing_entry" | jq --arg users "$USERS_JSON" '.users += ($users | fromjson) | unique')
             updated_log=$(echo "$current_log" | jq --arg date "$DATE" --argjson users "$updated_users" '. |= map(if .day == $date then .users = $users else . end)')
           else
             # Nếu ngày hôm nay chưa có trong log, tạo mới một mục log với người commit
