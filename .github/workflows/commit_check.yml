@@ -23,15 +23,15 @@ jobs:
           # Lấy ngày hôm nay theo định dạng dd-mm-yyyy
           today=$(date '+%d-%m-%Y')
 
-          # Lấy tất cả commit trong thư mục ./code/{{today}}*
-          commits=$(git log --since="midnight" --oneline "./code/${today}*")
+          # Lấy tất cả commit trong thư mục ./code/{{today}}* và lấy thông tin người commit
+          commits=$(git log --since="midnight" --oneline --pretty=format:"%an" "./code/${today}*")
 
           # Khởi tạo một mảng trống để lưu danh sách người commit
           users=()
 
           # Lấy username từ mỗi commit
-          while IFS= read -r commit; do
-            username=$(echo "$commit" | awk '{print $2}')
+          while IFS= read -r username; do
+            # Kiểm tra nếu username chưa có trong mảng thì thêm vào
             if [[ ! " ${users[@]} " =~ " ${username} " ]]; then
               users+=("$username")
             fi
@@ -41,11 +41,11 @@ jobs:
           users_json=$(printf '"%s", ' "${users[@]}")
           users_json="[${users_json%, }]"
 
-          echo "USERS_JSON=$users_json"
           # Lưu kết quả vào biến môi trường
           echo "USERS_JSON=$users_json" >> $GITHUB_ENV
           echo "DATE=$today" >> $GITHUB_ENV
 
+          echo "Users: $users_json"
       # Đảm bảo tệp submit_log.json tồn tại
       - name: Ensure the submit_log.json exists
         run: |
@@ -68,7 +68,7 @@ jobs:
 
           if [ "$existing_entry" != "null" ]; then
             # Nếu ngày hôm nay đã có trong log, thêm người commit vào danh sách hiện có
-            updated_users=$(echo "$existing_entry" | jq --arg users "$USERS_JSON" '.users += ($users | fromjson) | unique')
+            updated_users=$(echo "$existing_entry" | jq --argjson new_users "$USERS_JSON" '.users += $new_users | unique')
             updated_log=$(echo "$current_log" | jq --arg date "$DATE" --argjson users "$updated_users" '. |= map(if .day == $date then .users = $users else . end)')
           else
             # Nếu ngày hôm nay chưa có trong log, tạo mới một mục log với người commit
