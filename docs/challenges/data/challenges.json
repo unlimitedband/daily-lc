@@ -334,5 +334,11 @@
     "url": "https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/description",
     "difficulty": "MEDIUM",
     "day": "23-10-2024 00:00 UTC"
+  },
+  {
+    "day": "18-12-2024 01:55 UTC",
+    "title": "Count Beautiful Splits in an Array",
+    "url": "https://leetcode.com/problems/count-beautiful-splits-in-an-array/description",
+    "difficulty": "MEDIUM"
   }
 ]
