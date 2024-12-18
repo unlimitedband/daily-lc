@@ -1,19 +1,21 @@
 function formatDate(customDateString) {
     try {
-        const [day, month, year, time] = customDateString.split(/[- :]/);
-        const isoDate = `${year}-${month}-${day}T${time}:00Z`;
+        // Chuyển đổi định dạng "18-12-2024 01:55 UTC" thành đối tượng Date
+        const [day, month, year, time, zone] = customDateString.split(/[- :]/);
+        const isoDate = `${year}-${month}-${day}T${time}:00Z`; // Định dạng ISO 8601
         const date = new Date(isoDate);
 
+        // Format ngày cho đẹp mắt
         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         return date.toLocaleDateString('en-US', options);
     } catch (error) {
         console.error('Error parsing date:', error);
-        return customDateString;
+        return customDateString; // Trả về ngày gốc nếu lỗi
     }
 }
 
 function formatDifficulty(difficulty) {
-    return difficulty.charAt(0).toUpperCase() + difficulty.slice(1).toLowerCase();
+    return difficulty.charAt(0).toUpperCase() + difficulty.slice(1).toLowerCase(); // Viết hoa chữ đầu
 }
 
 function loadChallenges() {
@@ -28,9 +30,9 @@ function loadChallenges() {
         .then(data => {
             // Sắp xếp các challenges theo ngày mới nhất
             data.sort((a, b) => {
-                const dateA = new Date(a.day);
-                const dateB = new Date(b.day);
-                return dateB - dateA; // Ngày mới nhất sẽ được ưu tiên
+                const dateA = new Date(formatDateForSort(a.day));
+                const dateB = new Date(formatDateForSort(b.day));
+                return dateB - dateA; // Ngày mới nhất lên trước
             });
 
             const problemList = document.getElementById('problemList');
@@ -55,6 +57,12 @@ function loadChallenges() {
         .catch(error => {
             console.error('Error loading challenges:', error);
         });
+}
+
+// Chuyển đổi định dạng "day" cho mục đích sắp xếp
+function formatDateForSort(customDateString) {
+    const [day, month, year, time] = customDateString.split(/[- :]/);
+    return `${year}-${month}-${day}T${time}:00Z`; // ISO 8601
 }
 
 document.addEventListener('DOMContentLoaded', loadChallenges);
