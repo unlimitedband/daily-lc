@@ -340,5 +340,11 @@
     "title": "Count Beautiful Splits in an Array",
     "url": "https://leetcode.com/problems/count-beautiful-splits-in-an-array/description",
     "difficulty": "MEDIUM"
+  },
+  {
+    "day": "18-12-2024 17:08 UTC",
+    "title": "Create a DataFrame from List",
+    "url": "https://leetcode.com/problems/create-a-dataframe-from-list/description",
+    "difficulty": "EASY"
   }
 ]
