@@ -1,0 +1,68 @@
+name: Group Commit Authors by Day
+
+on:
+  push:
+    paths:
+      - 'docs/code/**'  
+
+permissions:
+  contents: write  
+
+jobs:
+  check_commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Get commit details
+        id: get_commit_details
+        run: |
+          # Lấy thông tin commit cuối cùng
+          commit_username=$(git log -1 --pretty=format:'%ae') # Lấy username từ email
+          commit_date=$(git log -1 --pretty=format:'%ad' --date=iso)
+
+          # Chỉ lấy ngày (YYYY-MM-DD) từ commit_date
+          commit_day=$(echo $commit_date | cut -d' ' -f1)
+
+          echo "commit_username=$commit_username" >> $GITHUB_ENV
+          echo "commit_day=$commit_day" >> $GITHUB_ENV
+
+      - name: Update submit_log.json
+        run: |
+          # Đường dẫn đến submit_log.json
+          JSON_FILE="data/submit_log.json"
+
+          # Kiểm tra nếu submit_log.json tồn tại, nếu không thì tạo mới
+          if [ ! -f "$JSON_FILE" ]; then
+            echo "[]" > "$JSON_FILE"
+          fi
+
+          # Đọc ngày và username từ biến môi trường
+          COMMIT_DAY="$commit_day"
+          COMMIT_USERNAME="$commit_username"
+
+          # Kiểm tra và cập nhật submit_log.json
+          jq --arg day "$COMMIT_DAY" --arg username "$COMMIT_USERNAME" '
+            # Nếu ngày đã tồn tại, thêm username vào danh sách nếu chưa có
+            (map(select(.date == $day)) | .[0]) as $existing |
+            if $existing then
+              map(
+                if .date == $day then
+                  .authors |= (if . | index($username) then . else . + [$username] end)
+                else .
+                end
+              )
+            else
+              . + [{"date": $day, "authors": [$username]}]
+            end
+          ' "$JSON_FILE" > temp.json && mv temp.json "$JSON_FILE"
+
+      - name: Commit changes to submit_log.json
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/submit_log.json
+          git commit -m "Update submit log for $commit_day"
+          git push origin
