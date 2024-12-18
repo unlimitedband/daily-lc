@@ -1,8 +1,11 @@
 name: Check commits and update submit_log
+
 on:
   push:
+    branches:
+      - main 
     paths:
-      - './code/**'  # Giám sát mọi thay đổi trong thư mục ./code
+      - './code/**'
 
 jobs:
   check_commits:
