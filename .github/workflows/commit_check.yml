@@ -5,6 +5,9 @@ on:
     paths:
       - 'code/*/*/*'  # Lắng nghe các thay đổi trong thư mục code/{{năm}}_{{tháng}}/{{ngày}}/*
 
+permissions:
+  contents: write
+
 jobs:
   update-log:
     runs-on: ubuntu-latest
