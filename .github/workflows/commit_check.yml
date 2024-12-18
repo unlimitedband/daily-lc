@@ -32,7 +32,7 @@ jobs:
 
           # Lấy tên người commit và ngày hiện tại
           AUTHOR_NAME="${{ env.AUTHOR_NAME }}"
-          CURRENT_DAY=$(date -u +"%d-%m-%Y %H:%M UTC")
+          CURRENT_DAY=$(date -u +"%d-%m-%Y")
 
           # Đọc dữ liệu hiện tại trong submit_log.json
           DATA=$(cat docs/challenges/data/submit_log.json)
