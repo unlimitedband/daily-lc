@@ -1,68 +1,90 @@
-name: Group Commit Authors by Day
-
+name: Check commits and update submit_log
 on:
   push:
     paths:
-      - 'docs/code/**'  
-
-permissions:
-  contents: write  
+      - './code/**'  # Giám sát mọi thay đổi trong thư mục ./code
 
 jobs:
-  check_commit:
+  check_commits:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Get commit details
-        id: get_commit_details
+      - name: Get commit info and check for users
+        id: get_commits
         run: |
-          # Lấy thông tin commit cuối cùng
-          commit_username=$(git log -1 --pretty=format:'%ae') # Lấy username từ email
-          commit_date=$(git log -1 --pretty=format:'%ad' --date=iso)
+          # Get today's date in the format day-month-year
+          today=$(date '+%d-%m-%Y')
 
-          # Chỉ lấy ngày (YYYY-MM-DD) từ commit_date
-          commit_day=$(echo $commit_date | cut -d' ' -f1)
+          # Get all commits in the directory for today
+          commits=$(git log --since="midnight" --oneline ./code/${today}*)
 
-          echo "commit_username=$commit_username" >> $GITHUB_ENV
-          echo "commit_day=$commit_day" >> $GITHUB_ENV
+          # Initialize an empty array for storing users
+          users=()
 
-      - name: Update submit_log.json
+          # Extract usernames from the commits
+          while IFS= read -r commit; do
+            # Get the username from each commit
+            username=$(echo "$commit" | awk '{print $2}')
+            if [[ ! " ${users[@]} " =~ " ${username} " ]]; then
+              users+=("$username")
+            fi
+          done <<< "$commits"
+
+          # Convert array of users to a JSON-compatible string
+          users_json=$(printf '"%s", ' "${users[@]}")
+          users_json="[${users_json%, }]"
+
+          # Set output with users and the date
+          echo "USERS_JSON=$users_json" >> $GITHUB_ENV
+          echo "DATE=$today" >> $GITHUB_ENV
+
+      - name: Ensure the submit_log.json exists
         run: |
-          # Đường dẫn đến submit_log.json
-          JSON_FILE="data/submit_log.json"
+          # Ensure the docs/challenges/data directory exists
+          mkdir -p docs/challenges/data
 
-          # Kiểm tra nếu submit_log.json tồn tại, nếu không thì tạo mới
-          if [ ! -f "$JSON_FILE" ]; then
-            echo "[]" > "$JSON_FILE"
+          # Check if submit_log.json exists, if not create it with an empty array
+          if [ ! -f docs/challenges/data/submit_log.json ]; then
+            echo "[]" > docs/challenges/data/submit_log.json
           fi
 
-          # Đọc ngày và username từ biến môi trường
-          COMMIT_DAY="$commit_day"
-          COMMIT_USERNAME="$commit_username"
+      - name: Update submit_log.json with commit users
+        run: |
+          # Get the current content of submit_log.json
+          current_log=$(cat docs/challenges/data/submit_log.json)
 
-          # Kiểm tra và cập nhật submit_log.json
-          jq --arg day "$COMMIT_DAY" --arg username "$COMMIT_USERNAME" '
-            # Nếu ngày đã tồn tại, thêm username vào danh sách nếu chưa có
-            (map(select(.date == $day)) | .[0]) as $existing |
-            if $existing then
-              map(
-                if .date == $day then
-                  .authors |= (if . | index($username) then . else . + [$username] end)
-                else .
-                end
-              )
-            else
-              . + [{"date": $day, "authors": [$username]}]
-            end
-          ' "$JSON_FILE" > temp.json && mv temp.json "$JSON_FILE"
+          # Check if the current day is already in the log
+          existing_entry=$(echo "$current_log" | jq -r --arg date "$DATE" '.[] | select(.day == $date)')
+
+          if [ "$existing_entry" != "null" ]; then
+            # If the entry for today exists, add the users to the existing list
+            updated_users=$(echo "$existing_entry" | jq --argjson new_users "$USERS_JSON" '.users += $new_users | unique')
+            updated_log=$(echo "$current_log" | jq --arg date "$DATE" --argjson users "$updated_users" '. |= map(if .day == $date then .users = $users else . end)')
+          else
+            # If the entry for today doesn't exist, create a new entry with the users
+            new_entry="{\"day\": \"$DATE\", \"users\": $USERS_JSON}"
+            updated_log=$(echo "$current_log" | jq ". += [$new_entry]")
+          fi
+
+          # Write the updated log back to the file
+          echo "$updated_log" > docs/challenges/data/submit_log.json
 
       - name: Commit changes to submit_log.json
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/submit_log.json
-          git commit -m "Update submit log for $commit_day"
+          
+          # Ensure changes are staged
+          git add docs/challenges/data/submit_log.json
+
+          # Check if changes are staged
+          git status
+
+          # Commit the changes if there are any
+          git commit -m "Update submit_log for ${{ env.DATE }}" || echo "No changes to commit"
+          
+          # Push changes to repository
           git push origin
