@@ -26,6 +26,13 @@ function loadChallenges() {
             return response.json();
         })
         .then(data => {
+            // Sắp xếp các challenges theo ngày mới nhất
+            data.sort((a, b) => {
+                const dateA = new Date(a.day);
+                const dateB = new Date(b.day);
+                return dateB - dateA; // Ngày mới nhất sẽ được ưu tiên
+            });
+
             const problemList = document.getElementById('problemList');
             problemList.innerHTML = '';
 
