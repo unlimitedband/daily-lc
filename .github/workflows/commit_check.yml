@@ -3,91 +3,95 @@ name: Check commits and update submit_log
 on:
   push:
     branches:
-      - main 
+      - main
     paths:
-      - 'code/**'
+      - './code/**' 
 
 jobs:
   check_commits:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout code
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # Lấy thông tin commit và kiểm tra người commit
       - name: Get commit info and check for users
         id: get_commits
         run: |
-          # Get today's date in the format day-month-year
+          # Lấy ngày hôm nay theo định dạng dd-mm-yyyy
           today=$(date '+%d-%m-%Y')
 
-          # Get all commits in the directory for today
-          commits=$(git log --since="midnight" --oneline ./code/${today}*)
+          # Lấy tất cả commit trong thư mục ./code/{{today}}*
+          commits=$(git log --since="midnight" --oneline "./code/${today}*")
 
-          # Initialize an empty array for storing users
+          # Khởi tạo một mảng trống để lưu danh sách người commit
           users=()
 
-          # Extract usernames from the commits
+          # Lấy username từ mỗi commit
           while IFS= read -r commit; do
-            # Get the username from each commit
             username=$(echo "$commit" | awk '{print $2}')
             if [[ ! " ${users[@]} " =~ " ${username} " ]]; then
               users+=("$username")
             fi
           done <<< "$commits"
 
-          # Convert array of users to a JSON-compatible string
+          # Chuyển mảng người commit thành chuỗi JSON
           users_json=$(printf '"%s", ' "${users[@]}")
           users_json="[${users_json%, }]"
 
-          # Set output with users and the date
+          # Lưu kết quả vào biến môi trường
           echo "USERS_JSON=$users_json" >> $GITHUB_ENV
           echo "DATE=$today" >> $GITHUB_ENV
 
+      # Đảm bảo tệp submit_log.json tồn tại
       - name: Ensure the submit_log.json exists
         run: |
-          # Ensure the docs/challenges/data directory exists
+          # Tạo thư mục nếu chưa có
           mkdir -p docs/challenges/data
 
-          # Check if submit_log.json exists, if not create it with an empty array
+          # Kiểm tra nếu submit_log.json không tồn tại thì tạo mới với một mảng trống
           if [ ! -f docs/challenges/data/submit_log.json ]; then
             echo "[]" > docs/challenges/data/submit_log.json
           fi
 
+      # Cập nhật submit_log.json với người commit của ngày hôm nay
       - name: Update submit_log.json with commit users
         run: |
-          # Get the current content of submit_log.json
+          # Đọc nội dung của submit_log.json
           current_log=$(cat docs/challenges/data/submit_log.json)
 
-          # Check if the current day is already in the log
+          # Kiểm tra xem ngày hôm nay đã có trong log chưa
           existing_entry=$(echo "$current_log" | jq -r --arg date "$DATE" '.[] | select(.day == $date)')
 
           if [ "$existing_entry" != "null" ]; then
-            # If the entry for today exists, add the users to the existing list
+            # Nếu ngày hôm nay đã có trong log, thêm người commit vào danh sách hiện có
             updated_users=$(echo "$existing_entry" | jq --argjson new_users "$USERS_JSON" '.users += $new_users | unique')
             updated_log=$(echo "$current_log" | jq --arg date "$DATE" --argjson users "$updated_users" '. |= map(if .day == $date then .users = $users else . end)')
           else
-            # If the entry for today doesn't exist, create a new entry with the users
+            # Nếu ngày hôm nay chưa có trong log, tạo mới một mục log với người commit
             new_entry="{\"day\": \"$DATE\", \"users\": $USERS_JSON}"
             updated_log=$(echo "$current_log" | jq ". += [$new_entry]")
           fi
 
-          # Write the updated log back to the file
+          # Lưu kết quả vào tệp submit_log.json
           echo "$updated_log" > docs/challenges/data/submit_log.json
 
+      # Commit thay đổi vào submit_log.json
       - name: Commit changes to submit_log.json
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Ensure changes are staged
+          # Đảm bảo thay đổi được thêm vào staging
           git add docs/challenges/data/submit_log.json
 
-          # Check if changes are staged
+          # Kiểm tra xem có thay đổi nào chưa được commit không
           git status
 
-          # Commit the changes if there are any
+          # Commit thay đổi nếu có
           git commit -m "Update submit_log for ${{ env.DATE }}" || echo "No changes to commit"
           
-          # Push changes to repository
-          git push origin
+          # Đẩy thay đổi lên repository
+          git push origin main
