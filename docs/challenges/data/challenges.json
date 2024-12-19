@@ -340,5 +340,11 @@
     "title": "Count Beautiful Splits in an Array",
     "url": "https://leetcode.com/problems/count-beautiful-splits-in-an-array/description",
     "difficulty": "MEDIUM"
+  },
+  {
+    "day": "19-12-2024 12:12 UTC",
+    "title": "Check if Binary String Has at Most One Segment of Ones",
+    "url": "https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/description",
+    "difficulty": "EASY"
   }
 ]
