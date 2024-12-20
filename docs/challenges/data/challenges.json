@@ -346,5 +346,11 @@
     "title": "Check if Binary String Has at Most One Segment of Ones",
     "url": "https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/description",
     "difficulty": "EASY"
+  },
+  {
+    "day": "20-12-2024 09:00 UTC",
+    "title": "Maximum Difference Score in a Grid",
+    "url": "https://leetcode.com/problems/maximum-difference-score-in-a-grid/description",
+    "difficulty": "MEDIUM"
   }
 ]
