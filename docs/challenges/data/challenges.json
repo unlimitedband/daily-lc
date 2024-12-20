@@ -346,11 +346,5 @@
     "title": "Check if Binary String Has at Most One Segment of Ones",
     "url": "https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/description",
     "difficulty": "EASY"
-  },
-  {
-    "day": "19-12-2024 17:07 UTC",
-    "title": "Reformat Department Table",
-    "url": "https://leetcode.com/problems/reformat-department-table/description",
-    "difficulty": "EASY"
   }
 ]
