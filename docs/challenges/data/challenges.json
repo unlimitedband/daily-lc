@@ -352,5 +352,11 @@
     "title": "Maximum Difference Score in a Grid",
     "url": "https://leetcode.com/problems/maximum-difference-score-in-a-grid/description",
     "difficulty": "MEDIUM"
+  },
+  {
+    "day": "20-12-2024 17:07 UTC",
+    "title": "Graph Connectivity With Threshold",
+    "url": "https://leetcode.com/problems/graph-connectivity-with-threshold/description",
+    "difficulty": "HARD"
   }
 ]
